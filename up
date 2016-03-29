@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+git commit -am 'add new'
+git push -u origin master
