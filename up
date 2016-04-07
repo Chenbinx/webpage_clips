@@ -1,6 +1,7 @@
 #!/usr/bin/sh
 
 unset http_proxy
-git commit -am 'add new'
+git add .
+git commit -m 'add new'
 git push -u origin master
 set http_proxy=http://proxynj.zte.com.cn:80
