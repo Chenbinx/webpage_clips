@@ -1,7 +1,13 @@
 #!/usr/bin/sh
 
+if [x$1 != x]
+then
+    branch: $1
+else	
+    branch: origin
+fi	
 unset http_proxy
 git add .
 git commit -m 'add new'
-git push -u origin master
+git push -u $branch master
 set http_proxy=http://proxynj.zte.com.cn:80
