@@ -2,10 +2,11 @@
 
 if [ x$1 != x ]
 then
-    branch: $1
+    branch=$1
 else	
-    branch: origin
+    branch=origin
 fi	
+
 unset http_proxy
 git add .
 git commit -m 'add new'
